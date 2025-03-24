@@ -92,7 +92,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#3} & \small #4 \\
       % \textit{\small#5} & \textit{\small #6} \\
     \end{tabular*}\vspace{-5pt}
 }
@@ -101,7 +101,7 @@
 \newcommand{\resumeProjectHeading}[2]{
     \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      #1 & \small#2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -155,12 +155,12 @@
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-      \begin{tabular}{@{} l@{\hspace{3pt}}l @{}}
+      \begin{tabular}{@{} l@{\hspace{6pt}}l @{}}
         \textbf{Languages:} & Python, JavaScript, Bash, SQL, Java \\[3pt]
         \textbf{Frameworks:} & ExpressJS, Spring Boot \\[3pt]
         \textbf{Databases:} & PostgreSQL, Redis \\[3pt]
         \textbf{Cloud Platforms:} & Azure \\[3pt]
-        \textbf{Tools:} & Linux, Docker, Git, GitHub Actions, Jenkins, Terraform
+        \textbf{Tools:} & Linux, Docker, Git, GitHub Actions, Jenkins, Terraform, Jest
       \end{tabular}
     }}
   \resumeSubHeadingListEnd
@@ -176,7 +176,7 @@
     \resumeEducationHeading
       {VNU Ho Chi Minh City University of Technology
       }{Ho Chi Minh City, Vietnam}
-      {B.Sc. in Computer Science;   \textbf{GPA: 3.10/4.00}}{Expected Jun 2026}
+      {Bachelor of Science in Computer Science;   \textbf{GPA: 3.10/4.00}}{Expected Jun 2026}
 \end{itemize}
 
   \resumeSubHeadingListEnd
@@ -219,7 +219,7 @@
     \resumeSubHeadingListStart
       
       \resumeProjectHeading
-        {\textbf{Smart Farm} $|$ \emph{\href{https://github.com/kng1259/IOT-project}{GitHub}} $|$ \emph{\href{https://drive.google.com/file/d/1R50MEnKQcrV0OXfp1K20jsz2jnyDsDmk/view?usp=sharing}{Architecture Diagram}}}{}
+        {\textbf{Smart Farm Management Website} $|$ \emph{\href{https://github.com/kng1259/IOT-project}{GitHub}} $|$ \emph{\href{https://drive.google.com/file/d/1R50MEnKQcrV0OXfp1K20jsz2jnyDsDmk/view?usp=sharing}{Architecture Diagram}}}{Jan 2025 - Now}
           \resumeItemListStart
             \resumeItem{Deployed a smart farm system on \textbf{Microsoft Azure} that collects sensor data from IoT devices and allows users to monitor and control the farm remotely.}
             \resumeItem{Used \textbf{Terraform} to automate the deployment of Azure resources, including IoT Hub, Azure Function, and a three-tier web application, utilizing VNet integration and Key Vault for secure communication and secrets storage.}
@@ -229,11 +229,20 @@
           \resumeItemListEnd
       
       \resumeProjectHeading
-        {\textbf{Renting and Reselling Books App} $|$ \emph{\href{https://github.com/btram11/Mobile-242}{GitHub}}}{}
+        {\textbf{Renting and Reselling Books Mobile App} $|$ \emph{\href{https://github.com/btram11/Mobile-242}{GitHub}}}{Jan 2025 - Now}
           \resumeItemListStart
-            \resumeItem{Used \textbf{Terraform} to automate the deployment of Azure managed PostgreSQL, Redis service and a Virtual Machine for the backend server.}
-            \resumeItem{Implemented a \textbf{Jenkinsfile} to automate building and pushing the mobile app's apk to Google Drive on a local Jenkins server as part of the CI/CD pipeline.}
-            \resumeItem{Developed a \textbf{RESTful API} using ExpressJS and PostgreSQL to manage user accounts, books, utilizing Redis for efficient caching.}
+            \resumeItem{Used \textbf{Terraform} to automate the deployment of Azure managed PostgreSQL, Redis service and a Virtual Machine for the backend server, utilizing VNet integration and Key Vault for secure communication and secrets storage.}
+            \resumeItem{Implemented a \textbf{Jenkinsfile} to automate building and pushing the mobile app's apk to Google Drive on a local Linux Jenkins server as part of the CI/CD pipeline.}
+            \resumeItem{Developed a {RESTful API} using \textbf{ExpressJS} and PostgreSQL to efficiently manage user accounts and books, utilizing Redis for efficient caching.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Social Network for Studying Website} $|$ \emph{\href{https://github.com/NguyenVu04/Do_An}{GitHub}}}{Sep 2024 - Dec 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a {RESTful API} using \textbf{ExpressJS} and PostgreSQL to efficiently manage user accounts, posts, and comments.}
+            \resumeItem{Implemented a \textbf{Docker Compose} file to run the ExpressJS server and PostgreSQL database in separate containers, allowing seamless local development experience.}
+            \resumeItem{Wrote unit tests using \textbf{Jest} to ensure the correctness of the API endpoints.}
+            \resumeItem{Utilized \textbf{GitHub Actions} to automate running the unit tests on every push to the main branch.}
           \resumeItemListEnd
       
     \resumeSubHeadingListEnd
