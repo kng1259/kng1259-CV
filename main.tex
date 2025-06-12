@@ -157,11 +157,11 @@
   \resumeSubHeadingListStart
     \small{\item{
       \begin{tabular}{@{} l@{\hspace{6pt}}l @{}}
-        \textbf{Languages:} & Python, JavaScript, Bash, SQL, Java \\[3pt]
+        \textbf{Languages:} & Python, JavaScript, Bash, SQL, Golang \\[3pt]
         % \textbf{Frameworks:} & ExpressJS, Spring Boot \\[3pt]
-        \textbf{Databases:} & PostgreSQL, Redis \\[3pt]
-        \textbf{Cloud Platforms:} & Azure \\[3pt]
-        \textbf{Tools:} & Linux, Docker, Git, GitHub Actions, Jenkins, Terraform, Jest
+        % \textbf{Databases:} & PostgreSQL, Prisma, DrizzleORM \\[3pt]
+        \textbf{Cloud Platforms:} & Azure (VM, PostgreSQL, IoT Hub, Container App, Static Web App), AWS (EC2, Lambda) \\[3pt]
+        \textbf{Tools:} & Linux, Docker, Kubernetes, Helm, Terraform, GitLab CI, GitHub Actions, Jenkins, PostgreSQL \\[3pt]
       \end{tabular}
     }}
   \resumeSubHeadingListEnd
@@ -177,7 +177,7 @@
     \resumeEducationHeading
       {VNU Ho Chi Minh City University of Technology
       }{Ho Chi Minh City, Vietnam}
-      {Bachelor of Science in Computer Science;   \textbf{GPA: 3.10/4.00}}{Expected Jun 2026}
+      {Bachelor of Science in Computer Science;   \textbf{GPA: 3.10/4.00}}{Expected Nov 2026}
 \end{itemize}
 
   \resumeSubHeadingListEnd
@@ -220,41 +220,51 @@
     \resumeSubHeadingListStart
       
       \resumeProjectHeading
-        {\textbf{Smart Farm Management Website} $|$ \emph{\href{https://github.com/kng1259/IOT-project}{GitHub}} $|$ \emph{\href{https://drive.google.com/file/d/1EoGsjEHycOAPmUl10ieyaEXncYd-JI56/view?usp=sharing}{Architecture Diagram}}}{Jan 2025 - Now}
-        {Team leader, DevOps, Backend}{}
+        {\textbf{Local Kubernetes Cluster} }{}
+        {Kubernetes, Helm, GitLab CI, ArgoCD, Docker}{}
           \resumeItemListStart
-            \resumeItem{Used \textbf{Terraform} to automate the deployment of Azure resources, including IoT Hub and a three-tier web application, utilizing VNet integration and Key Vault for secure communication and secrets storage.}
-            \resumeItem{Utilized \textbf{Azure IoT SDK} to manage data processing and Cloud-to-Device messaging in a Javascript backend service.}
-            \resumeItem{Implemented a multi-stage \textbf{Dockerfile} to containerize the ExpressJS backend server and deployed it to Azure App Service, optimizing the resulting image's size.}
-            \resumeItem{Used \textbf{Jenkins} to automate building and publishing the application to Azure.}
-            \resumeItem{Managed a local \textbf{Mosquitto} MQTT broker to facilitate communication between IoT devices and the cloud.}
+            \resumeItem{Provisioned a virtualized multi-node Kubernetes cluster using {Talos Linux} and {Vagrant}.}
+            \resumeItem{Created a {Helm} chart to deploy a Golang application to the Kubernetes cluster, using Kubernetes Operators to define PostgreSQL and RabbitMQ clusters.}
+            \resumeItem{Implemented a CI/CD pipeline using {GitLab CI} and {ArgoCD} to streamline the deployment process.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Smart Farm Management Website} $|$ \emph{\href{https://github.com/kng1259/IOT-project}{GitHub}} $|$ \emph{\href{https://drive.google.com/file/d/1EoGsjEHycOAPmUl10ieyaEXncYd-JI56/view?usp=sharing}{Architecture Diagram}}}{}
+        {ExpressJS, PostgreSQL, Azure, Terraform, Jenkins, Docker}{}
+          \resumeItemListStart
+            \resumeItem{Utilized {Azure IoT SDK} to manage data processing and Cloud-to-Device messaging in a {ExpressJS} backend.}
+            \resumeItem{Used {Terraform} to define and provision Azure resources, including IoT Hub and a three-tier web application.}
+            \resumeItem{Implemented a multi-stage {Dockerfile} to containerize the ExpressJS backend to deploy to Azure Container App.}
+            \resumeItem{Used {Jenkins} to automate building and publishing the application to Azure.}
           \resumeItemListEnd
       
-      \resumeProjectHeading
-        {\textbf{Renting and Reselling Books Mobile App} $|$ \emph{\href{https://github.com/btram11/Mobile-242}{GitHub}}}{Jan 2025 - Now}
-        {Team member, DevOps, Backend}{}
-          \resumeItemListStart
-            \resumeItem{Used \textbf{Terraform} to automate the deployment of Azure managed PostgreSQL, Redis service and a Virtual Machine for the backend server, utilizing VNet integration and Key Vault for secure communication and secrets storage, and cloudinit to initialize Virtual Machine.}
-            \resumeItem{Used \textbf{Jenkins} to automate building and pushing the mobile app's apk to Google Drive.}
-            \resumeItem{Developed a {RESTful API} using \textbf{ExpressJS} and PostgreSQL to efficiently manage user accounts and books.}
-          \resumeItemListEnd
+      % \resumeProjectHeading
+      %   {\textbf{Renting and Reselling Books Mobile App} $|$ \emph{\href{https://github.com/btram11/Mobile-242}{GitHub}}}{}
+      %   {ExpressJS, PostgreSQL, Redis, Azure, Terraform, Jenkins}{}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a {RESTful API} using {ExpressJS} and PostgreSQL to efficiently manage user accounts and books.}
+      %       \resumeItem{Used {Terraform} to automate the deployment of Azure managed PostgreSQL, Redis service and a Virtual Machine for the backend server, utilizing VNet integration and Key Vault for secure communication and secrets storage, and cloudinit to initialize Virtual Machine.}
+      %       \resumeItem{Used {Jenkins} to automate building and pushing the mobile app's apk to Google Drive.}
+      %     \resumeItemListEnd
 
       \resumeProjectHeading
-        {\textbf{Social Network for Studying Website} $|$ \emph{\href{https://github.com/NguyenVu04/Do_An}{GitHub}}}{Sep 2024 - Dec 2024}
-        {Team leader, Backend}{}
+        {\textbf{Social Network for Studying Website} $|$ \emph{\href{https://github.com/NguyenVu04/Do_An}{GitHub}}}{}
+        {ExpressJS, PostgreSQL, Jest, GitHub Actions}{}
           \resumeItemListStart
-            \resumeItem{Developed a {RESTful API} using \textbf{ExpressJS} and PostgreSQL to efficiently manage user accounts, posts, and comments.}
-            \resumeItem{Wrote unit tests using \textbf{Jest} to ensure the correctness of the API endpoints.}
-            \resumeItem{Used \textbf{GitHub Actions} to automate running the unit tests on every push to the main branch.}
+            \resumeItem{Developed a {RESTful API} using {ExpressJS} and PostgreSQL to efficiently manage user accounts, posts, and comments.}
+            \resumeItem{Wrote unit tests using {Jest} to ensure the correctness of the API endpoints.}
+            \resumeItem{Implemented a CI pipeline using {GitHub Actions} to automate the testing process.}
           \resumeItemListEnd
 
-      \resumeProjectHeading
-        {\textbf{Local Kubernetes Cluster} $|$ \emph{\href{https://github.com/kng1259/talos-libvirt-k8s-cluster}{GitHub}}}{April 2025 - Now}
-        {Solo project}{}
-          \resumeItemListStart
-            \resumeItem{Managed a virtualized multi-node Kubernetes cluster using \textbf{Talos Linux} and \textbf{Vagrant} on a physical host machine}
-            \resumeItem{Deployed a simple backend server connecting to PostgreSQL and Redis}
-          \resumeItemListEnd
+      % \resumeProjectHeading
+      %   {\textbf{Coffee E-Commerce Website} $|$ \emph{\href{https://github.com/loccolloc/Database_System_Assignment}{GitHub}}}{}
+      %   {Spring Boot, SQL Server}{}
+      %     \resumeItemListStart
+      %       \resumeItem{Developed a {RESTful API} using {Spring Boot} and PostgreSQL to efficiently manage user accounts, products, and orders.}
+      %       \resumeItem{Used {SQL Server} to manage the database and wrote SQL queries to interact with the database.}
+      %     \resumeItemListEnd
+
+
     \resumeSubHeadingListEnd
 
 
